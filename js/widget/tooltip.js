@@ -27,7 +27,7 @@
 	});
 
 	function clearTooltip(){
-		$('.tooltip').remove();
+		// $('.tooltip').remove();
 	}
 
 	function Tooltip(options){
@@ -48,6 +48,8 @@
 			var options = this.options,
 				pos	= options.pos,
 				tooltipText = options.target.data('tooltip');
+
+				console.log(tooltipText)
 
 			this.$el.addClass(pos).find('.tooltip-inner').html(tooltipText);
 			$body.append(this.$el);

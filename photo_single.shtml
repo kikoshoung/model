@@ -43,14 +43,14 @@
 				<li><a class="icon-link favorites" href="javascript:;"><span class="icon icon-favorites"></span></a></li>
 				<li>
 					<a class="icon-link share" href="javascript:;"><span class="icon icon-share"></span></a>
-					<div class="work-single-share">
+					<div class="work-single-share" style="display:none;">
 						<a class="share-link tw" href="javascript:;"></a>
 						<a class="share-link fb" href="javascript:;"></a>
 						<a class="share-link wb" href="javascript:;"></a>
 						<a class="share-link gg" href="javascript:;"></a>
 					</div>
 				</li>
-				<li><a class="icon-link full" href="javascript:;"><span class="icon icon-full"></span></a></li>
+				<li><a class="icon-link full" href="photo_fullscreen.html"><span class="icon icon-full"></span></a></li>
 			</ul>
 		</div>
 	</div>
