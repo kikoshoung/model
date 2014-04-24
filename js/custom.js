@@ -32,8 +32,19 @@ $(function() {
 			};
 		});
 		
+	});
 
-		
+	//登录
+	function login_state () {
+		$('.js_login_state').toggleClass("logined");
+	}
+	$('.js_login_btn').click(function() {
+		login_state();
+	});
+
+	//显示分享
+	$('.js_show_share_btn').click(function() {
+		$(this).parent().toggleClass("show");
 	});
 
 });
