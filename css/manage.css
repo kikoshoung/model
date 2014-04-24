@@ -95,6 +95,13 @@
 	display: block;
 }
 
+.preview-form{
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 1px solid #d6d6d6;
+	text-align: left;
+}
+
 .sns-btn-big{
 	position: relative;
 	display: inline-block;

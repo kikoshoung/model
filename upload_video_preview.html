@@ -1,26 +1,46 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8;">
 <link rel="stylesheet" href="css/dji_css.css">
 <link rel="stylesheet" href="css/font.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/manage.css">
 <div style="width: 720px; padding-left: 20px;">
-	<ul class="manage-tab clearfix">
-		<li class="tab-item active"><a class="fake-link" href="upload_photo.html">Upload my photos</a></li>
-		<li class="tab-item last"><a class="fake-link" href="upload_video.html">Upload my videos</a></li>
-	</ul>
-	<ul class="manage-tab-cont">
-		<li>
-			<div class="upload-panel">
-				<img width="100%" src="img/banner3.jpg">
-				<div style="margin-top: 20px; font-size: 20px; color: #999;">OR</div>
-				<div style="margin-top: 20px;"><a class="button button-green">Import from followings</a></div>
-				<div class="clearfix" style="width: 400px; margin: 40px auto 0;">
-					<a class="button sns-btn-big fb">Your<br/>Facebook<i class="icon-sns-shadow fb"></i></a>
-					<a class="button sns-btn-big gg">Your<br/>Google+<i class="icon-sns-shadow gg"></i></a>
-					<a class="button sns-btn-big tt">Your<br/>Twitter<i class="icon-sns-shadow tt"></i></a>
-					<a class="button sns-btn-big yt">Your<br/>Youtube<i class="icon-sns-shadow yt"></i></a>
-				</div>
-			</div>
-		</li>
-		<li></li>
-	</ul>
+    <ul class="manage-tab clearfix">
+        <li class="tab-item active"><a class="fake-link" href="upload_photo.html">Upload my photos</a>
+        </li>
+        <li class="tab-item last"><a class="fake-link" href="upload_video.html">Upload my videos</a>
+        </li>
+    </ul>
+    <ul class="manage-tab-cont">
+        <li>
+            <div class="upload-panel">
+                <img width="100%" src="img/banner3.jpg">
+                <div class="preview-action">
+                    <a class="button">Rmove</a>
+                    <a class="button button-green">Save & Next</a>
+                    <a class="button button-blue">Finish Upload</a>
+                </div>
+                <div class="preview-form" role="form">
+                	<div class="form-group">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                   	<div class="form-group">
+                        <label for="title" style="display: block;">Title</label>
+                        <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;">
+                        <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
+                        <label><input type="radio" name="type"> Public</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" class="form-control" id="tags">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li></li>
+    </ul>
 </div>
