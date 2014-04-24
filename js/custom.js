@@ -47,4 +47,9 @@ $(function() {
 		$(this).parent().toggleClass("show");
 	});
 
+	//头部下拉菜单
+	$('.js-drop-down-btn').click(function() {
+		$('.header-login-state').toggleClass("show-drop-down")
+	});
+
 });

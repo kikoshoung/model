@@ -35,7 +35,7 @@
 					</div>
 				</li>
 				<li class="active">
-					<img class="img-responsive" src="img/event/banner1.jpg">
+					<a href="event_single.shtml"><img class="img-responsive" src="img/event/banner1.jpg"></a>
 					<div class="banner-info">
 						<p class="banner-info-title">Phantom Shell Contest</p>
 						<p class="banner-info-other">The Phantom, an iconic product from DJI, has enjoyed immense popularity over the past few years. From the hobbyist to the experienced, the Phantom range has helped countless people enjoy the spirit of flying, alongside taking epic aerial shots.</p>
@@ -77,7 +77,7 @@
 				<div class="event-cell">
 					<a href="event_single.shtml"><img class="img-responsive" src="img/event/event_2.jpg" /></a>
 					<p class="event-cell-line title">Phantom Shell Contest</p>
-					<p class="event-cell-line desc">Winners of the 2013 DJI Photo Contest have finally been selected! Thank you everyone for your patience. Picking winners was a very difficult task, causing hours of intense debate. </p>
+					<p class="event-cell-line desc">The Phantom, an iconic product from DJI, has enjoyed immense popularity over the past few years. From the hobbyist to the experienced, the Phantom range has helped countless people enjoy the spirit of flying, alongside taking epic aerial shots.</p>
 				</div>
 
 			</div>

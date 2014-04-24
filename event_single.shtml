@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-store, must-revalidate">
+	<meta http-equiv="expires" content="wed, 26 feb 1997 08:21:57 gmt">
+	<meta http-equiv="expires" content="0">
+	<meta name="author" content="jia.xu">
+	<meta name="keywords" content="CreateDJI" />
+	<meta name="description" content="CreateDJI" />
+	<title>CreateDJI</title>
+	<link rel="stylesheet" href="css/dji_css.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="events">
+
+<!-- #include file="inc/header.html" -->
+
+<div class="page">
+
+	<div class="container">
+
+		<div class="event-single">
+			<div class="event-single-title">
+				<h1 class="text">Phantom 2 Vision+ at NAB</h1>
+				<p class="other">by Danny Yeung / Friday, 10 April, 2014</p>
+			</div><!-- / -->
+
+			<div class="event-single-cont">
+				<div class="left-cont">
+					<div class="custom">
+						<img class="img-responsive" src="img/event/single_1.jpg" alt="">
+						<p style="padding:10px 0;border-bottom:1px solid #e5e5e5;font-size:14px;color:#434343;"><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</strong></p>
+						<div style="padding-top:20px;border-bottom:1px solid #e5e5e5;font-size:14px;color:#7d7d7d;">
+							<p style="padding-bottom:20px;text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It </p>
+							<p style="padding-bottom:20px;text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<p style="padding-bottom:20px;text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen b</p>
+						</div>
+						<p style="padding:10px 0;font-size:14px;color:#434343;"><strong>More to read</strong></p>
+						<ul style="font-size:14px;color:#7d7d7d;padding-left:20px;padding-bottom:20px;border-bottom:1px solid #e5e5e5;">
+							<li style="list-style-type:disc;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+							<li style="list-style-type:disc;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+							<li style="list-style-type:disc;" style="list-style-type:disc;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+							<li style="list-style-type:disc;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+						</ul>
+						<div style="width:100%;padding:20px 0;font-size:14px;color:#7d7d7d;overflow:hidden;border-bottom:1px solid #e5e5e5;">
+							<div style="float:left;width:308px;padding-right:20px;">
+								<img class="img-responsive" src="img/event/single_2.jpg" alt="">
+								<p style="padding-top:10px;">Lorem Ipsum is simply dummy</p>
+							</div>
+							<div style="float:left;width:330px;color:#7d7d7d;">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</div>
+						</div>
+					</div>
+					<div class="event-single-comments">
+						<!-- #include file="inc/single_comments.html" -->
+					</div>
+				</div>
+				<div class="right-cont">
+
+					<div class="event-cell">
+						<a href="event_single.shtml"><img class="img-responsive" src="img/event/event_1.jpg" /></a>
+						<p class="event-cell-line title">2013 DJI Photo Contest</p>
+						<p class="event-cell-line desc">Winners of the 2013 DJI Photo Contest have finally been selected! Thank you everyone for your patience. Picking winners was a very difficult task, causing hours of intense debate. </p>
+					</div>
+
+					<div class="event-cell">
+						<a href="event_single.shtml"><img class="img-responsive" src="img/event/event_2.jpg" /></a>
+						<p class="event-cell-line title">Phantom Shell Contest</p>
+						<p class="event-cell-line desc">The Phantom, an iconic product from DJI, has enjoyed immense popularity over the past few years. From the hobbyist to the experienced, the Phantom range has helped countless people enjoy the spirit of flying, alongside taking epic aerial shots.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- #include file="inc/footer.html" -->
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
