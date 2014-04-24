@@ -39,7 +39,88 @@
 			<ul class="work-single-other">
 				<li><span class="grade">99.8</span></li>
 				<li><span class="star"><img src="img/star.jpg"></span></li>
+				<li><a class="icon-link like" href="javascript:;"><span class="icon icon-like"></span><span class="num">1485</span></a></li>
+				<li><a class="icon-link favorites" href="javascript:;"><span class="icon icon-favorites"></span></a></li>
+				<li>
+					<a class="icon-link share" href="javascript:;"><span class="icon icon-share"></span></a>
+					<div class="work-single-share">
+						<a class="share-link tw" href="javascript:;"></a>
+						<a class="share-link fb" href="javascript:;"></a>
+						<a class="share-link wb" href="javascript:;"></a>
+						<a class="share-link gg" href="javascript:;"></a>
+					</div>
+				</li>
+				<li><a class="icon-link full" href="javascript:;"><span class="icon icon-full"></span></a></li>
 			</ul>
+		</div>
+	</div>
+
+	<div class="work-single-bot">
+		<div class="container">
+			<div class="left-cont">
+
+				<div class="work-single-desc">
+					<p class="title">Description</p>
+					<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+
+				<div class="work-single-append">
+					<p><strong>Product info:</strong> Phantom 2 Vision+ , HD-3D</p>
+					<p><strong>Location:</strong> Surrey, UK, E31 42, N56, 11</p>
+				</div>
+
+				<div class="work-single-comments">
+					<!-- #include file="inc/single_comments.html" -->
+				</div>
+
+			</div>
+			<div class="right-cont">
+				
+				<div class="work-single-userinfo">
+					<div class="left">
+						<img class="img-responsive" src="img/junge.jpg">
+						<span class="vip">VIP Vote</span>
+					</div>
+					<div class="right">
+						<P class="name">Ali Erturk</P>
+						<p class="intro">remaining essentially unchanged. It was popularised in the 1960s with </p>
+					</div>
+				</div>
+
+				<div class="work-single-userwork">
+					<ul>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/1.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/2.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/3.jpg"></a></li>
+					</ul>
+				</div>
+
+				<div class="work-single-tags">
+					<div class="title">TAGS</div>
+					<p class="links">
+						<a href="#none">B&W</a><span>|</span>
+						<a href="#none">Black & White</a><span>|</span><br>
+						<a href="#none">District</a><span>|</span>
+						<a href="#none">Efex Pro</a><span>|</span>
+						<a href="#none">RainRiverRock SkyStorm</a><span>|</span>
+						<a href="#none">StreamValley</a><span>|</span>
+						<a href="#none">WaterWeather</a>
+					</p>
+				</div>
+
+				<div class="work-single-userwork no-border">
+					<div class="title">Other recommended Photos</div>
+					<ul>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/1.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/2.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/3.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/4.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/1.jpg"></a></li>
+						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/2.jpg"></a></li>
+					</ul>
+				</div>
+
+			</div>
 		</div>
 	</div>
 
