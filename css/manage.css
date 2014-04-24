@@ -23,10 +23,124 @@
 }
 
 .upload-panel{
-	padding: 45px 0;
+	padding: 20px 0;
 	text-align: center;
 }
+.upload-panel img{
+	display: inline-block;
+}
+.upload-panel .sns-btn-big{
+	float: left;
+	margin: 0 15px 15px 15px;
+}
 
+.preview-thumb{
+	margin: 20px 0 0 -5px;
+}
+.preview-thumb li{
+	position: relative;
+	float: left;
+	height: 70px;
+	margin: 0 5px;
+}
+.preview-thumb img{
+	width: 70px;
+	height: 70px;
+}
+.preview-thumb-indicator{
+	display: none;
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #249bed;
+}
+.preview-thumb li.active .preview-thumb-indicator{
+	display: block;
+}
+.preview-thumb-add{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 64px;
+	font-family: impact;
+	font-weight: bold;
+	font-size: 60px;
+	color: #959595;
+	border: 3px dashed #959595;
+	text-align: center;
+	cursor: pointer;
+}
+.preview-action{
+	text-align: left;
+	margin-top: 30px;
+}
+.preview-thumb-selected{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 70px;
+	background-color: #000;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	font-family: impact;
+	color: white;
+	font-size: 50px;
+}
+.preview-thumb li.selected .preview-thumb-selected{
+	display: block;
+}
+
+.sns-btn-big{
+	position: relative;
+	display: inline-block;
+	width: 170px;
+	height: 90px;
+	padding: 10px 60px 10px 10px;
+	line-height: 26px;
+	color: white;
+	font-size: bold;
+	text-align: left;
+}
+.sns-btn-big.fb{
+	background-color: #5d82d1;
+}
+.sns-btn-big.gg{
+	background-color: #eb5e4c;
+}
+.sns-btn-big.tt{
+	background-color: #40bff5;
+}
+.sns-btn-big.yt{
+	background-color: #ef4e41;
+}
+.sns-btn-big .icon-sns-shadow{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.icon-sns-shadow{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	background: url(../img/sns-shadow.png);
+}
+.icon-sns-shadow.fb{
+	background-position: 0 0;
+}
+.icon-sns-shadow.gg{
+	background-position: 0 -55px;
+}
+.icon-sns-shadow.tt{
+	background-position: 0 -110px;
+}
+.icon-sns-shadow.yt{
+	background-position: 0 -165px;
+}
 
 .clearfix {
   zoom: 1;
