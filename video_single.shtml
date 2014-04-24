@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="photos">
+<body class="videos">
 
 <!-- #include file="inc/header.html" -->
 
@@ -26,7 +26,7 @@
 	<div class="work-single-top">
 		<div class="container">
 			<div class="work-single-cont">
-				<img src="img/banner1.jpg" />
+				<embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="586" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 				<a class="btn-back work-single-back" href="javascript:;">back</a>
 				<a class="btn-next work-single-next" href="javascript:;">next</a>
 			</div>
