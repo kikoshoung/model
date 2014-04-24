@@ -12,6 +12,7 @@
     background-color: #000;
 }
 .fullscreen-img-wrapper {
+    position: relative;
     height: 100%;
     margin: 0 60px;
     text-align: center;
@@ -34,12 +35,21 @@
     bottom: 0;
     height: 65px;
     text-align: center;
+    font-size: 14px;
+    color: #6f6f6f;
 }
-.fullscreen-toolbar span{
+.fullscreen-toolbar span {
     vertical-align: bottom;
+    line-height: 20px;
 }
-.fullscreen-toolbar > span{
+.fullscreen-toolbar > span {
     margin: 0 15px;
+}
+.fullscreen-toolbar .text {
+    color: #b5b5b5;
+}
+.fullscreen-toolbar .big {
+    font-size: 24px;
 }
 .fullscreen-avatar {
     float: left;
@@ -96,8 +106,42 @@ p.fullscreen-title {
 .tool.fullscr.active {
     background-position: 0 -179px;
 }
+
+
+.widget-rate.level-1 .star-1{
+    background-position: 0 0;
+}
+.widget-rate.level-2 .star-1, .widget-rate.level-2 .star-2{
+    background-position: 0 0;
+}
+.widget-rate.level-3 .star-1, .widget-rate.level-3 .star-2, .widget-rate.level-3 .star-3{
+    background-position: 0 0;
+}
+.widget-rate.level-4 .star-1, .widget-rate.level-4 .star-2, .widget-rate.level-4 .star-3, .widget-rate.level-4 .star-4{
+    background-position: 0 0;
+}
+.widget-rate.level-5 .star-1, .widget-rate.level-5 .star-2, .widget-rate.level-5 .star-3, .widget-rate.level-5 .star-4, .widget-rate.level-5 .star-5{
+    background-position: 0 0;
+}
+
+
 .ellipsis {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+/*重复的代码，待整合*/
+.work-single-share{height: 40px;}
+.work-single-share .share-link{display:inline-block;float:left;width:39px;height:40px;margin:0 5px;}
+.work-single-share .fb{background:url(../img/fb_b.png) no-repeat;}
+.work-single-share .tw{background:url(../img/tw_b.png) no-repeat;}
+.work-single-share .wb{background:url(../img/weibo.png) no-repeat;}
+.work-single-share .gg{background:url(../img/gg_b.png) no-repeat;}
+
+.fullscreen-img-wrapper .btn-back{
+    left: -33px;
+}
+.fullscreen-img-wrapper .btn-next{
+    right: -33px;
 }
