@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="index">
 
 <!-- #include file="inc/header.html" -->
 
@@ -77,45 +77,157 @@
 			</div>
 			<div class="list-cont">
 				<div class="photo-cell cascade_1">
-					<a href="none"><img src="img/index_photos/photo_1.jpg"></a>
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_1.jpg"></a>
 					<div class="photo-info">
 						<p class="photo-info-title">Harbour of sunset</p>
 						<p class="photo-info-artist">husham alasadi</p>
 						<span class="photo-info-score">99.8</span>
-					</div><!-- / -->
-					<div class="share">
-						<a class="share-btn">share</a>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
 						<ul class="share-list">
 							<li><a class="share-icon share-icon-f" href="#none"></a></li>
 							<li><a class="share-icon share-icon-t" href="#none"></a></li>
 							<li><a class="share-icon share-icon-g" href="#none"></a></li>
 							<li><a class="share-icon share-icon-p" href="#none"></a></li>
 						</ul>
-					</div><!-- / -->
+					</div>
 				</div>
 				<div class="photo-cell cascade_2">
-					<img src="img/index_photos/photo_2.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_2.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_3">
-					<img src="img/index_photos/photo_3.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_3.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_4">
-					<img src="img/index_photos/photo_4.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_4.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_5">
-					<img src="img/index_photos/photo_5.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_5.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_6">
-					<img src="img/index_photos/photo_6.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_6.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_7">
-					<img src="img/index_photos/photo_7.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_7.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_8">
-					<img src="img/index_photos/photo_8.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_8.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="photo-cell cascade_9">
-					<img src="img/index_photos/photo_9.jpg">
+					<a href="photo_single.shtml"><img src="img/index_photos/photo_9.jpg"></a>
+					<div class="photo-info">
+						<p class="photo-info-title">Harbour of sunset</p>
+						<p class="photo-info-artist">husham alasadi</p>
+						<span class="photo-info-score">99.8</span>
+					</div>
+					<div class="js_show_share share">
+						<a class="js_show_share_btn share-btn">share</a>
+						<ul class="share-list">
+							<li><a class="share-icon share-icon-f" href="#none"></a></li>
+							<li><a class="share-icon share-icon-t" href="#none"></a></li>
+							<li><a class="share-icon share-icon-g" href="#none"></a></li>
+							<li><a class="share-icon share-icon-p" href="#none"></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div class="more-link">
