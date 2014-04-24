@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="fragment" content="!">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/dji_css.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fullscreen.css">
+</head>
+
+<body>
+    <div class="fullscreen">
+        <div class="fullscreen-header">
+            <img class="fullscreen-avatar" src="img/avatar.jpg">
+            <div class="fullscreen-avatar-figcap">
+                <p class="fullscreen-title ellipsis">HAVING FUN ONTHE BEACH</p>
+                <p class="ellipsis">Ali Erturk</p>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrapper">
+            <img class="fullscreen-img" src="">
+        </div>
+        <div class="fullscreen-toolbar">
+            <span>99.8</span>
+            |
+            <span>
+                <span class="tool star active"></span>
+                <span class="tool star active"></span>
+                <span class="tool star active"></span>
+                <span class="tool star"></span>
+                <span class="tool star"></span>
+            </span>
+            |
+            <span>
+                <span class="tool zan"></span>
+                <span>1,438</span>
+            </span>
+            |
+            <span class="tool like"></span>
+            |
+            <span class="tool share"></span>
+            |
+            <span class="tool fullscr"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            var $win = $(window),
+                $img = $('.fullscreen-img'),
+                $wrapper = $('.fullscreen-img-wrapper');
+
+            $img.on('load', loadHandler);
+            $win.on('resize', resizeHandler);
+
+            $img.attr('src', 'img/banner1.jpg');
+
+            function loadHandler(){
+                resizeHandler();
+                $img.show();
+            }
+            function resizeHandler(){
+                var wrapperRatio = getRatio($wrapper),
+                    imgRatio = getRatio($img),
+                    width, height;
+
+                if(wrapperRatio < imgRatio){
+                    width = $wrapper.width();
+                    height = $wrapper.width() / imgRatio;
+                } else {
+                    width = $wrapper.height() * imgRatio;
+                    height = $wrapper.height();
+                }
+
+                $img.width(width + 'px').height(height + 'px').css;
+                $img.css({
+                    width: width + 'px',
+                    height: height + 'px',
+                    marginTop: ($wrapper.height() - height) / 2 + 'px'
+                });
+            }
+            function getRatio(elem){
+                return elem.width() / elem.height();
+            }
+        })();
+    </script>
+</body>
+
+</html>
