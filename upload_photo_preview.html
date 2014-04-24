@@ -39,27 +39,26 @@
                     <a class="button button-green">Save & Next</a>
                     <a class="button button-blue">Finish Upload</a>
                 </div>
-                <form role="form">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <div class="preview-form" role="form">
+                	<div class="form-group">
+                        <input type="radio">
+                        <input type="radio">
+                    </div>
+                   	<div class="form-group">
+                        <label for="title" style="display: block;">Title</label>
+                        <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;">
+                        <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
+                        <label><input type="radio" name="type"> Public</label>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="5"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
+                        <label for="tags">Tags</label>
+                        <input type="text" class="form-control" id="tags">
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">Check me out
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                </div>
             </div>
         </li>
         <li></li>
