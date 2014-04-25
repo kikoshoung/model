@@ -52,4 +52,9 @@ $(function() {
 		$('.header-login-state').toggleClass("show-drop-down")
 	});
 
+	//锁定按钮
+	$('.lock-btn').click(function() {
+		$(this).toggleClass("locked")
+	});
+
 });
