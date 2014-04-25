@@ -34,6 +34,9 @@
 	margin: 0 15px 15px 15px;
 }
 
+.preview{
+	width: 100%;
+}
 .preview-thumb{
 	margin: 20px 0 0 -5px;
 }
@@ -42,6 +45,7 @@
 	float: left;
 	height: 70px;
 	margin: 0 5px;
+	cursor: pointer;
 }
 .preview-thumb img{
 	width: 70px;
