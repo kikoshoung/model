@@ -28,7 +28,7 @@
 		<div class="banner">
 			<ul class="banner-list" style="margin-left:-975px;">
 				<li>
-					<img src="img/banner2.jpg">
+					<img src="img/banner3.jpg">
 					<div class="banner-info">
 						<p class="banner-info-title">Having fun on the beach</p>
 						<p class="banner-info-other">Shooting horses on Aruba beach, using for the first time our new F450</p>
@@ -44,7 +44,7 @@
 					</div>
 				</li>
 				<li>
-					<img src="img/banner3.jpg">
+					<img src="img/banner2.jpg">
 					<div class="banner-info">
 						<p class="banner-info-title">Having fun on the beach</p>
 						<p class="banner-info-other">Shooting horses on Aruba beach, using for the first time our new F450</p>
@@ -58,8 +58,8 @@
 				<li></li>
 			</ol>
 			<div class="banner-btn">
-				<a class="btn-back banner-btn-back" href="javascript:;">back</a>
-				<a class="btn-next banner-btn-next" href="javascript:;">next</a>
+				<a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
+            	<a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
 			</div>
 		</div>
 		
@@ -326,5 +326,30 @@
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+	(function(){
+		var $btnShowAnother = $('.btn-show-another'),
+			imgList = ['img/banner3.jpg', 'img/banner1.jpg', 'img/banner2.jpg'];
+
+		$btnShowAnother.on('click', showAnotherHandler);
+
+		function showAnotherHandler(){
+			var $btn = $(this),
+				$bannerLis = $('.banner-list li'),
+				$head = $bannerLis.eq(0),
+				$rear = $bannerLis.eq(2),
+				$target = $bannerLis.eq(2),
+                type = $btn.hasClass('btn-next') ? 'right' : 'left';
+
+            if(type == 'right'){
+            	$head.insertAfter($rear);
+            } else {
+                $rear.insertBefore($head);
+            }
+            $bannerLis.removeClass('active');
+            $target.addClass('active');
+		}
+	})();
+</script>
 </body>
 </html>

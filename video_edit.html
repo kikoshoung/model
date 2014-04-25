@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="css/dji_css.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/manage.css">
+<div style="width: 720px; padding-left: 20px;">
+    <div class="upload-panel" style="text-align: left;">
+        <h3>Edit Video</h3>
+        <img class="preview" src="img/banner2.jpg">
+        <div class="preview-form" role="form" style="border-top: none; margin-top: 0;">
+           	<div class="form-group">
+                <label for="title" style="display: block;">Title</label>
+                <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;">
+                <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
+                <label><input type="radio" name="type" checked> Public</label>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tags">Tags</label>
+                <input type="text" class="form-control" id="tags">
+            </div>
+        </div>
+        <div class="preview-action" style="text-align: right;">
+            <a class="button">Delete</a>
+            <a class="button button-green" id="btn-save">Cancel</a>
+            <a class="button button-blue" id="btn-upload">Save changes</a>
+        </div>
+    </div>
+</div>

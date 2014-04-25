@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/dji_css.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fullscreen.css">
+	<link rel="stylesheet" href="css/widget/tooltip.css">
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
@@ -26,9 +28,9 @@
 	<div class="work-single-top">
 		<div class="container">
 			<div class="work-single-cont">
-				<embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="586" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-				<a class="btn-back work-single-back" href="javascript:;">back</a>
-				<a class="btn-next work-single-next" href="javascript:;">next</a>
+            	<iframe class="fullscreen-img" width="100%" height="586" frameborder=0 allowfullscreen></iframe>
+				<a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
+           		<a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
 			</div>
 		</div>
 	</div>
@@ -36,22 +38,28 @@
 	<div class="work-single-info">
 		<div class="container">
 			<p class="work-single-title">Having fun on the beach</p>
-			<ul class="work-single-other">
-				<li><span class="grade">99.8</span></li>
-				<li><span class="star"><img src="img/star.jpg"></span></li>
-				<li><a class="icon-link like" href="javascript:;"><span class="icon icon-like"></span><span class="num">1485</span></a></li>
-				<li><a class="icon-link favorites" href="javascript:;"><span class="icon icon-favorites"></span></a></li>
-				<li>
-					<a class="icon-link share" href="javascript:;"><span class="icon icon-share"></span></a>
-					<div class="work-single-share" style="display:none;">
-						<a class="share-link tw" href="javascript:;"></a>
-						<a class="share-link fb" href="javascript:;"></a>
-						<a class="share-link wb" href="javascript:;"></a>
-						<a class="share-link gg" href="javascript:;"></a>
-					</div>
-				</li>
-				<li><a class="icon-link full" href="video_fullscreen.html"><span class="icon icon-full"></span></a></li>
-			</ul>
+			<div class="fullscreen-toolbar" style="position: static; float: right; width: auto; padding: 20px 0 0 0;">
+	            <span class="text big">99.8</span>
+	            |
+	            <span class="widget-rate" data-level="3">
+	                <span class="tool star star-1"></span>
+	                <span class="tool star star-2"></span>
+	                <span class="tool star star-3"></span>
+	                <span class="tool star star-4"></span>
+	                <span class="tool star star-5"></span>
+	            </span>
+	            |
+	            <span class="widget-zan" data-num="1438">
+	                <span class="tool zan"></span>
+	                <span class="text zan-num"></span>
+	            </span>
+	            |
+	            <span class="widget-like tool like"></span>
+	            |
+	            <span class="widget-share tool share active" data-tooltip='<div class="work-single-share"><a class="share-link tw" href="javascript:;"></a><a class="share-link fb" href="javascript:;"></a><a class="share-link wb" href="javascript:;"></a><a class="share-link gg" href="javascript:;"></a></div>'></span>
+	            |
+	            <span class="tool fullscr active"><a style="display: block; height: 100%;" href="video_fullscreen.html"></a></span>
+	        </div>
 		</div>
 	</div>
 
@@ -130,5 +138,131 @@
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/widget/tooltip.js"></script>
+<script type="text/javascript">
+	(function(){
+        var $win = $(window),
+            $img = $('.fullscreen-img'),
+            $wrapper = $('.fullscreen-img-wrapper'),
+            $rate = $('.widget-rate'),
+            $zan = $('.widget-zan'),
+            $like = $('.widget-like'),
+            $share = $('.widget-share'),
+            $btnShowAnother = $('.btn-show-another'),
+            videoIndex = 0;
+            videoList = ['http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf', 'http://player.youku.com/player.php/sid/XNjgxMTYwMDQ0/v.swf', 'http://player.youku.com/player.php/sid/XNjY1MzMyMDQ4/v.swf'];
+
+        $img.on('load', loadHandler);
+        // $win.on('resize', resizeHandler);
+        $rate.on('click', '.star', rateHandler);
+        $zan.on('click', '.zan', zanHandler);
+        $like.on('click', likeHandler);
+        $share.on('click', shareHandler);
+        $btnShowAnother.on('click', showAnotherHandler);
+
+        $img.attr('src', videoList[videoIndex]);
+        initRate();
+        initZan();
+
+        function loadHandler(){
+            // resizeHandler();
+            $img.css('display', 'inline-block');
+        }
+        function resizeHandler(){
+            var wrapperRatio = getRatio($wrapper),
+                imgRatio = getRatio($img),
+                width, height;
+
+            if(wrapperRatio < imgRatio){
+                width = $wrapper.width();
+                height = $wrapper.width() / imgRatio;
+            } else {
+                width = $wrapper.height() * imgRatio;
+                height = $wrapper.height();
+            }
+
+            $img.width(width + 'px').height(height + 'px').css;
+            $img.css({
+                width: width + 'px',
+                height: height + 'px',
+                marginTop: ($wrapper.height() - height) / 2 + 'px'
+            });
+        }
+        function rateHandler(e){
+            var $stars = $rate.find('.star'),
+                $target = $(e.target),
+                origLevel = $rate.data('level'),
+                curLevel = $stars.index($target) + 1;
+
+            $rate.removeClass('level-' + origLevel);  
+            $rate.addClass('level-' + curLevel);
+            $rate.data('level', curLevel);
+        }
+        function zanHandler(e){
+            var $target = $(e.target),
+                $num = $zan.find('.zan-num'),
+                origNum = $zan.data('num'),
+                delta, sum;
+
+            if($target.hasClass('active')){
+                delta = -1;
+                $target.removeClass('active');
+            } else {
+                delta = 1;
+                $target.addClass('active');
+            }
+
+            sum = origNum + delta;
+            $num.html(sum);
+            $zan.data('num', sum);
+        }
+        function likeHandler(e){
+            var $target = $(e.target);
+
+            if($target.hasClass('active')){
+                $target.removeClass('active');
+            } else {
+                $target.addClass('active');
+            }
+                
+        }
+        function shareHandler(){
+            new App.Tooltip({
+                target: $share,
+                triggeredBy: $share,
+                theme: 'light'
+            });
+        }
+        function showAnotherHandler(){
+            var $target = $(this),
+                type = $target.hasClass('btn-next') ? 'right' : 'left';
+
+            if(type == 'right'){
+                videoIndex++;
+            } else {
+                videoIndex--;
+            }
+
+            if(videoIndex < 0){
+                videoIndex = 2
+            }
+            if(videoIndex > 2){
+                videoIndex = 0;
+            }
+
+            $img.attr('src', videoList[videoIndex]);
+        }
+        function getRatio(elem){
+            return elem.width() / elem.height();
+        }
+        function initRate(){
+            $rate.addClass('level-' + $rate.data('level'));
+        }
+        function initZan(){
+            $zan.find('.zan-num').html($zan.data('num'));
+        }
+    })();
+</script>
 </body>
 </html>
