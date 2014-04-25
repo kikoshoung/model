@@ -28,7 +28,8 @@
 	<div class="work-single-top">
 		<div class="container">
 			<div class="work-single-cont">
-            	<iframe class="fullscreen-img" width="100%" height="586" frameborder=0 allowfullscreen></iframe>
+            	<!-- <iframe class="fullscreen-img" width="100%" height="586" frameborder=0 allowfullscreen></iframe> -->
+            	<embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="591" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 				<a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
            		<a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
 			</div>
@@ -86,7 +87,7 @@
 				
 				<div class="work-single-userinfo">
 					<div class="left">
-						<img class="img-responsive" src="img/junge.jpg">
+						<a href="show_photos.shtml"><img class="img-responsive" src="img/junge.jpg"></a>
 						<span class="vip">VIP Vote</span>
 					</div>
 					<div class="right">
@@ -106,13 +107,13 @@
 				<div class="work-single-tags">
 					<div class="title">TAGS</div>
 					<p class="links">
-						<a href="#none">B&W</a><span>|</span>
-						<a href="#none">Black & White</a><span>|</span><br>
-						<a href="#none">District</a><span>|</span>
-						<a href="#none">Efex Pro</a><span>|</span>
-						<a href="#none">RainRiverRock SkyStorm</a><span>|</span>
-						<a href="#none">StreamValley</a><span>|</span>
-						<a href="#none">WaterWeather</a>
+						<a href="videos.shtml">B&W</a><span>|</span>
+						<a href="videos.shtml">Black & White</a><span>|</span><br>
+						<a href="videos.shtml">District</a><span>|</span>
+						<a href="videos.shtml">Efex Pro</a><span>|</span>
+						<a href="videos.shtml">RainRiverRock SkyStorm</a><span>|</span>
+						<a href="videos.shtml">StreamValley</a><span>|</span>
+						<a href="videos.shtml">WaterWeather</a>
 					</p>
 				</div>
 

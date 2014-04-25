@@ -48,13 +48,25 @@ $(function() {
 	});
 
 	//头部下拉菜单
-	$('.js-drop-down-btn').click(function() {
-		$('.header-login-state').toggleClass("show-drop-down")
+	$('.js-drop-down-btn').mousemove(function() {
+		$('.header-login-state').addClass("show-drop-down")
+	});
+	$('.header-drop-down').mousemove(function() {
+		$('.header-login-state').addClass("show-drop-down")
+	});
+	$('.header-drop-down').mouseout(function() {
+		$('.header-login-state').removeClass("show-drop-down")
 	});
 
 	//锁定按钮
 	$('.lock-btn').click(function() {
 		$(this).toggleClass("locked")
+	});
+
+	//nav_切换
+	$('.js_title_nav_btn').click(function() {
+		$(".title_nav_li").removeClass('active');
+		$(this).parent().addClass("active");
 	});
 
 });

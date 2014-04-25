@@ -63,16 +63,16 @@
 			</div>
 		</div>
 		
-		<div class="event-da">
+		<!-- <div class="event-da">
 			<a href="http://event.dji.com/phantomshellcontest"><img src="img/event_da.jpg"></a>
-		</div>
+		</div> -->
 
-		<div class="work-list index-photos">
+		<div class="work-list index-photos" style="border-top:1px solid #dcdcdc;">
 			<div class="list-title">
 				<span class="title-text">Photos</span>
 				<ul class="title-nav">
-					<li class="active"><a href="javascript:;">popular</a></li>
-					<li><a href="javascript:;">Latest</a></li>
+					<li class="title_nav_li active"><a class="js_title_nav_btn" href="javascript:;">popular</a></li>
+					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Latest</a></li>
 				</ul>
 			</div>
 			<div class="list-cont">
@@ -248,8 +248,8 @@
 			<div class="list-title">
 				<span class="title-text">Videos</span>
 				<ul class="title-nav">
-					<li class="active"><a href="javascript:;">popular</a></li>
-					<li><a href="javascript:;">Latest</a></li>
+					<li class="title_nav_li active"><a class="js_title_nav_btn" href="javascript:;">popular</a></li>
+					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Latest</a></li>
 				</ul>
 			</div>
 
@@ -316,6 +316,34 @@
 			<div class="more-link">
 				<a href="videos.shtml">More</a>
 			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="events-list">
+
+		<div class="list-title">
+			<span class="title-text">Events</span>
+		</div>
+
+		<div class="list-cont">
+
+			<div class="event-cell">
+				<a href="event_single.shtml"><img class="img-responsive" src="img/event/event_1.jpg" /></a>
+				<p class="event-cell-line title">2013 DJI Photo Contest</p>
+				<p class="event-cell-line desc">Winners of the 2013 DJI Photo Contest have finally been selected! Thank you everyone for your patience. Picking winners was a very difficult task, causing hours of intense debate. </p>
+			</div>
+
+			<div class="event-cell">
+				<a href="event_single.shtml"><img class="img-responsive" src="img/event/event_2.jpg" /></a>
+				<p class="event-cell-line title">Phantom Shell Contest</p>
+				<p class="event-cell-line desc">The Phantom, an iconic product from DJI, has enjoyed immense popularity over the past few years. From the hobbyist to the experienced, the Phantom range has helped countless people enjoy the spirit of flying, alongside taking epic aerial shots.</p>
+			</div>
+
 		</div>
 
 	</div>

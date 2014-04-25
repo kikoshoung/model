@@ -1,26 +1,23 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-<link rel="stylesheet" href="css/dji_css.css">
-<link rel="stylesheet" href="css/font.css">
-<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/manage.css">
-<div style="width: 720px; padding-left: 20px;">
+<div>
     <ul class="manage-tab clearfix">
-        <li class="tab-item active"><a class="fake-link" href="upload_photo.html">Upload my photos</a>
+        <li class="tab-item active"><a class="fake-link" href="manage_upload_photo.shtml">Upload my photos</a>
         </li>
-        <li class="tab-item last"><a class="fake-link" href="upload_video.html">Upload my videos</a>
+        <li class="tab-item last"><a class="fake-link" href="manage_upload_video.shtml">Upload my videos</a>
         </li>
     </ul>
     <ul class="manage-tab-cont">
         <li>
             <div class="upload-panel">
-                <img class="preview" src="img/banner2.jpg">
+                <img class="preview" src="img/banner1.jpg">
                 <ul class="preview-thumb clearfix">
-                    <li class="preview-item">
+                    <li class="preview-item active">
                         <img src="img/banner1.jpg">
                         <span class="preview-thumb-indicator"></span>
                         <span class="preview-thumb-selected">✔︎</span>
                     </li>
-                    <li class="preview-item active">
+                    <li class="preview-item">
                         <img src="img/banner2.jpg">
                         <span class="preview-thumb-indicator"></span>
                         <span class="preview-thumb-selected">✔︎</span>
@@ -40,7 +37,7 @@
                     <a class="button button-blue" id="btn-upload">Finish Upload</a>
                 </div>
                 <div class="preview-form" role="form">
-                    <div class="form-group">
+                   	<div class="form-group">
                         <label for="title" style="display: block;">Title</label>
                         <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;">
                         <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
@@ -89,7 +86,7 @@
             $target.addClass('selected');
         }
         function uploadHandler(){
-            location.href = 'upload_video_success.html';
+            location.href = 'manage_upload_photo_success.shtml';
         }
     })();
 </script>

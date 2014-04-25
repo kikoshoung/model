@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="manage_my_password">
+<body class="other-show-photos">
 
 <!-- #include file="inc/header.html" -->
 
@@ -35,25 +35,28 @@
 						<p>i am a keen amateur photographer from Gainsborough in Lincolnshire. I have been learning photography for the past three years. I have also been a part time</p>
 						<p>Equitment：Phantom 2 Vision+  ,  Phantom FC4</p>
 					</div>
+					<div class="userintro-btns-box">
+						<a class="button button-blue" href="manage_my_profile.shtml">Edit Profile</a>
+						<a class="button button-blue" href="manage_my_woks_photo.shtml">Managing my work</a>
+					</div>
 				</div>
 
 			</div>
 
 			<a class="choose-cover" href="#none">choose cover</a>
 
+			<ul class="show-nav">
+				<li><a class="active-photos" href="manage_show_photos.shtml">PHOTOS<span>54</span></a></li>
+				<li><a class="active-videos" href="manage_show_videos.shtml">VIDEOS<span>54</span></a></li>
+				<li><a class="active-favourites" href="#none">FAVOURITES<span>54</span></a></li>
+			</ul>
+
 		</div>
 	</div>
 
-	<div class="container manage-container">
+	<div class="container manage-container" style="padding:25px 15px;">
 
-		<!-- #include file="inc/side_nav.html" -->
-
-		<div class="manage-pagecont">
-			<div class="bg"></div>
-			<div class="manage-pagecont-warp">
-				<!-- #include file="inc/my_password.html" -->
-			</div>
-		</div><!-- / -->
+		<!-- #include file="inc/show_works.html" -->
 
 	</div>
 

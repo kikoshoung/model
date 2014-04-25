@@ -86,7 +86,7 @@
 				
 				<div class="work-single-userinfo">
 					<div class="left">
-						<img class="img-responsive" src="img/junge.jpg">
+						<a href="show_photos.shtml"><img class="img-responsive" src="img/junge.jpg"></a>
 						<span class="vip">VIP Vote</span>
 					</div>
 					<div class="right">
@@ -106,13 +106,13 @@
 				<div class="work-single-tags">
 					<div class="title">TAGS</div>
 					<p class="links">
-						<a href="#none">B&W</a><span>|</span>
-						<a href="#none">Black & White</a><span>|</span><br>
-						<a href="#none">District</a><span>|</span>
-						<a href="#none">Efex Pro</a><span>|</span>
-						<a href="#none">RainRiverRock SkyStorm</a><span>|</span>
-						<a href="#none">StreamValley</a><span>|</span>
-						<a href="#none">WaterWeather</a>
+						<a href="photos.shtml">B&W</a><span>|</span>
+						<a href="photos.shtml">Black & White</a><span>|</span><br>
+						<a href="photos.shtml">District</a><span>|</span>
+						<a href="photos.shtml">Efex Pro</a><span>|</span>
+						<a href="photos.shtml">RainRiverRock SkyStorm</a><span>|</span>
+						<a href="photos.shtml">StreamValley</a><span>|</span>
+						<a href="photos.shtml">WaterWeather</a>
 					</p>
 				</div>
 

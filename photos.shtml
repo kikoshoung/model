@@ -29,8 +29,9 @@
 			<div class="list-title">
 				<span class="title-text">Photos</span>
 				<ul class="title-nav">
-					<li class="active"><a href="javascript:;">popular</a></li>
-					<li><a href="javascript:;">Latest</a></li>
+					<li class="title_nav_li active"><a class="js_title_nav_btn" href="javascript:;">popular</a></li>
+					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Latest</a></li>
+					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Editor's</a></li>
 				</ul>
 			</div>
 			<div class="list-cont">
