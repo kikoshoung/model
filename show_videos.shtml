@@ -23,7 +23,7 @@
 
 <div class="page">
 
-	<div class="manage-head" style="background:url(../img/manage/Algarve-Beach-1.jpg) no-repeat center center;">
+	<div class="manage-head" style="background:url(img/manage/Algarve-Beach-1.jpg) no-repeat center center;">
 		<div class="container manage-head-warp">
 
 			<div class="manage-uesrinfo">
@@ -46,8 +46,8 @@
 			<a class="choose-cover" href="#none">choose cover</a>
 
 			<ul class="show-nav">
-				<li><a class="active-photos" href="manage_show_photos.shtml">PHOTOS<span>54</span></a></li>
-				<li><a class="active-videos" href="manage_show_videos.shtml">VIDEOS<span>54</span></a></li>
+				<li><a class="active-photos" href="show_photos.shtml">PHOTOS<span>54</span></a></li>
+				<li><a class="active-videos" href="show_videos.shtml">VIDEOS<span>54</span></a></li>
 				<li><a class="active-favourites" href="#none">FAVOURITES<span>54</span></a></li>
 			</ul>
 
