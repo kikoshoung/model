@@ -21,10 +21,9 @@
             </div>
         </div>
         <div class="fullscreen-img-wrapper">
-            <!--<img class="fullscreen-img" src="">-->
-            <embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="100%" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-            <a class="btn-back work-single-back" href="javascript:;">back</a>
-            <a class="btn-next work-single-next" href="javascript:;">next</a>
+            <iframe class="fullscreen-img" frameborder=0 allowfullscreen></iframe>
+            <a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
+            <a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
         </div>
         <div class="fullscreen-toolbar">
             <span class="text big">99.8</span>
@@ -60,7 +59,10 @@
                 $rate = $('.widget-rate'),
                 $zan = $('.widget-zan'),
                 $like = $('.widget-like'),
-                $share = $('.widget-share');
+                $share = $('.widget-share'),
+                $btnShowAnother = $('.btn-show-another'),
+                videoIndex = 0;
+                videoList = ['http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf', 'http://player.youku.com/player.php/sid/XNjgxMTYwMDQ0/v.swf', 'http://player.youku.com/player.php/sid/XNjY1MzMyMDQ4/v.swf'];
 
             $img.on('load', loadHandler);
             $win.on('resize', resizeHandler);
@@ -68,8 +70,9 @@
             $zan.on('click', '.zan', zanHandler);
             $like.on('click', likeHandler);
             $share.on('click', shareHandler);
+            $btnShowAnother.on('click', showAnotherHandler);
 
-            $img.attr('src', 'img/banner2.jpg');
+            $img.attr('src', videoList[videoIndex]);
             initRate();
             initZan();
 
@@ -141,6 +144,25 @@
                     triggeredBy: $share,
                     theme: 'light'
                 });
+            }
+            function showAnotherHandler(){
+                var $target = $(this),
+                    type = $target.hasClass('btn-next') ? 'right' : 'left';
+
+                if(type == 'right'){
+                    videoIndex++;
+                } else {
+                    videoIndex--;
+                }
+
+                if(videoIndex < 0){
+                    videoIndex = 2
+                }
+                if(videoIndex > 2){
+                    videoIndex = 0;
+                }
+
+                $img.attr('src', videoList[videoIndex]);
             }
             function getRatio(elem){
                 return elem.width() / elem.height();

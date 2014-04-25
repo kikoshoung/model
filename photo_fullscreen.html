@@ -22,8 +22,8 @@
         </div>
         <div class="fullscreen-img-wrapper">
             <img class="fullscreen-img" src="">
-            <a class="btn-back work-single-back" href="javascript:;">back</a>
-            <a class="btn-next work-single-next" href="javascript:;">next</a>
+            <a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
+            <a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
         </div>
         <div class="fullscreen-toolbar">
             <span class="text big">99.8</span>
@@ -59,7 +59,9 @@
                 $rate = $('.widget-rate'),
                 $zan = $('.widget-zan'),
                 $like = $('.widget-like'),
-                $share = $('.widget-share');
+                $share = $('.widget-share'),
+                $btnShowAnother = $('.btn-show-another'),
+                imgIndex = 1;
 
             $img.on('load', loadHandler);
             $win.on('resize', resizeHandler);
@@ -67,8 +69,9 @@
             $zan.on('click', '.zan', zanHandler);
             $like.on('click', likeHandler);
             $share.on('click', shareHandler);
+            $btnShowAnother.on('click', showAnotherHandler);
 
-            $img.attr('src', 'img/banner1.jpg');
+            $img.attr('src', 'img/banner' + imgIndex + '.jpg');
             initRate();
             initZan();
 
@@ -140,6 +143,25 @@
                     triggeredBy: $share,
                     theme: 'light'
                 });
+            }
+            function showAnotherHandler(){
+                var $target = $(this),
+                    type = $target.hasClass('btn-next') ? 'right' : 'left';
+
+                if(type == 'right'){
+                    imgIndex++;
+                } else {
+                    imgIndex--;
+                }
+
+                if(imgIndex < 1){
+                    imgIndex = 3
+                }
+                if(imgIndex > 3){
+                    imgIndex = 1;
+                }
+
+                $img.attr('src', 'img/banner' + imgIndex + '.jpg');
             }
             function getRatio(elem){
                 return elem.width() / elem.height();
