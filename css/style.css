@@ -416,3 +416,5 @@ a.btn-next{background:url(../img/right_.png) no-repeat;right:-94px;}
 
 .manage-show .photo-cell:hover .manage-edit,
 .manage-show .video-cell:hover .manage-edit{display:block;}
+
+.preview-form .preview-form-title{padding-bottom:15px;}
