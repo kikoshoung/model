@@ -45,7 +45,7 @@
 				</div>
 				<div class="login-form-other">
 					<a class="button button-green button-login" href="index_logined.shtml">Log in</a>
-					<p><a href="forgot_pwd.shtml">Forgot your password?</a></p>
+					<p><a href="#none">Forgot your password?</a></p>
 					<p>No account ? to <a href="register.shtml">register</a></p>
 				</div>
 			</div>
