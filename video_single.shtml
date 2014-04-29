@@ -27,9 +27,9 @@
 
 	<div class="work-single-top">
 		<div class="container">
-			<div class="work-single-cont">
-            	<!-- <iframe class="fullscreen-img" width="100%" height="586" frameborder=0 allowfullscreen></iframe> -->
-            	<embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="591" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+			<div class="work-single-cont" style="height:591px;">
+            	<iframe class="fullscreen-img" width="100%" height="591" frameborder=0 allowfullscreen></iframe>
+            	<!-- <embed src="http://player.youku.com/player.php/sid/XNjk1MTI1NjEy/v.swf" allowFullScreen="true" quality="high" width="100%" height="591" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed> -->
 				<a class="btn-show-another btn-back work-single-back" href="javascript:;">back</a>
            		<a class="btn-show-another btn-change btn-next work-single-next" href="javascript:;">next</a>
 			</div>
@@ -118,7 +118,7 @@
 				</div>
 
 				<div class="work-single-userwork no-border">
-					<div class="title">Other recommended Photos</div>
+					<div class="title">Other recommended Videos</div>
 					<ul>
 						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/1.jpg"></a></li>
 						<li><a href="javascript:;" title="photo name"><img class="img-responsive" src="img/photos/2.jpg"></a></li>

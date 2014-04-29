@@ -69,4 +69,8 @@ $(function() {
 		$(this).parent().addClass("active");
 	});
 
+	//添加一行
+	$('#js_add_btn').click(function() {
+		$('<input type="email" class="form-control input-margin-bottom" id="inputEmail3" placeholder="">').insertBefore('#js_add_btn');
+	});
 });

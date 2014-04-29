@@ -132,12 +132,12 @@ p.fullscreen-title {
 }
 
 /*重复的代码，待整合*/
-.work-single-share{height: 40px;}
-.work-single-share .share-link{display:inline-block;float:left;width:39px;height:40px;margin:0 5px;}
-.work-single-share .fb{background:url(../img/fb_b.png) no-repeat;}
-.work-single-share .tw{background:url(../img/tw_b.png) no-repeat;}
-.work-single-share .wb{background:url(../img/weibo.png) no-repeat;}
-.work-single-share .gg{background:url(../img/gg_b.png) no-repeat;}
+.work-single-share{height: 50px;}
+.work-single-share .share-link{display:inline-block;float:left;width:47px;height:47px;margin:0 5px;}
+.work-single-share .fb{background:url(../img/circle_fb.jpg) no-repeat;}
+.work-single-share .tw{background:url(../img/circle_tw.jpg) no-repeat;}
+.work-single-share .wb{background:url(../img/circle_wb.jpg) no-repeat;}
+.work-single-share .gg{background:url(../img/circle_gg.jpg) no-repeat;}
 
 .fullscreen-img-wrapper .btn-back{
     left: -33px;

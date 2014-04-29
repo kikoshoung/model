@@ -31,7 +31,7 @@
 				<ul class="title-nav">
 					<li class="title_nav_li active"><a class="js_title_nav_btn" href="javascript:;">popular</a></li>
 					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Latest</a></li>
-					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Editor's</a></li>
+					<li class="title_nav_li"><a class="js_title_nav_btn" href="javascript:;">Editor</a></li>
 				</ul>
 			</div>
 			<div class="list-cont">

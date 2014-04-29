@@ -28,7 +28,7 @@
 		<div class="banner">
 			<ul class="banner-list" style="margin-left:-975px;">
 				<li>
-					<img src="img/banner2.jpg">
+					<a href="photo_single.shtml"><img src="img/banner2.jpg"></a>
 					<div class="banner-info">
 						<p class="banner-info-title">Having fun on the beach</p>
 						<p class="banner-info-other">Shooting horses on Aruba beach, using for the first time our new F450</p>
@@ -36,7 +36,7 @@
 					</div>
 				</li>
 				<li class="active">
-					<img src="img/banner1.jpg">
+					<a href="photo_single.shtml"><img src="img/banner1.jpg"></a>
 					<div class="banner-info">
 						<p class="banner-info-title">Having fun on the beach</p>
 						<p class="banner-info-other">Shooting horses on Aruba beach, using for the first time our new F450</p>
@@ -44,7 +44,7 @@
 					</div>
 				</li>
 				<li>
-					<img src="img/banner3.jpg">
+					<a href="photo_single.shtml"><img src="img/banner3.jpg"></a>
 					<div class="banner-info">
 						<p class="banner-info-title">Having fun on the beach</p>
 						<p class="banner-info-other">Shooting horses on Aruba beach, using for the first time our new F450</p>
@@ -257,6 +257,7 @@
 				
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_8.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -264,6 +265,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_1.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -271,6 +273,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_2.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -278,6 +281,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_3.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -285,6 +289,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_4.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -292,6 +297,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_5.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -299,6 +305,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_6.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
@@ -306,6 +313,7 @@
 
 				<div class="video-cell">
 					<a href="video_single.shtml"><img class="img-responsive" src="img/index_videos/videos_7.jpg" /></a>
+					<p class="video-cell-line title">DJI Ronin - Behind the Scenes of a Long Take</p>
 					<p class="video-cell-line name">jimmy</p>
 					<p class="video-cell-line location">China</p>
 					<p class="video-cell-line time">March 10 2014</p>
