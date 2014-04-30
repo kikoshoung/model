@@ -1,0 +1,99 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8;">
+<link rel="stylesheet" href="css/dji_css.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/manage.css">
+<div style="width: 720px; padding-left: 20px;">
+    <ul class="manage-tab clearfix">
+        <li class="tab-item active"><a class="fake-link" href="upload_photo.html">Upload my photos</a>
+        </li>
+        <li class="tab-item last"><a class="fake-link" href="upload_video.html">Upload my videos</a>
+        </li>
+    </ul>
+    <ul class="manage-tab-cont">
+        <li>
+            <div class="upload-panel">
+                <img class="preview" src="img/banner1.jpg">
+                <ul class="preview-thumb clearfix">
+                    <li class="preview-item active">
+                        <img src="img/banner1.jpg">
+                        <span class="preview-thumb-indicator"></span>
+                        <span class="preview-thumb-selected">✔︎</span>
+                    </li>
+                    <li class="preview-item">
+                        <img src="img/banner2.jpg">
+                        <span class="preview-thumb-indicator"></span>
+                        <span class="preview-thumb-selected">✔︎</span>
+                    </li>
+                    <li class="preview-item">
+                        <img src="img/banner3.jpg">
+                        <span class="preview-thumb-indicator"></span>
+                        <span class="preview-thumb-selected">✔︎</span>
+                    </li>
+                    <li>
+                        <span class="preview-thumb-add">+</span>
+                    </li>
+                </ul>
+                <div class="preview-action">
+                    <a class="button">Rmove</a>
+                    <a class="button button-green" id="btn-save">Save & Next</a>
+                    <a class="button button-blue" id="btn-upload">Finish Upload</a>
+                </div>
+                <div class="preview-form" role="form">
+                   	<div class="form-group">
+                        <label for="title" style="display: block;">Title</label>
+                        <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;" value="Fizz">
+                        <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
+                        <label><input type="radio" name="type" checked> Public</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags</label>
+                        <input type="text" class="form-control" id="tags">
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li></li>
+    </ul>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        var $thumb = $('.preview-thumb'),
+            $thumbLis = $thumb.find('li'),
+            $preview = $('.preview'),
+            $btnSave = $('#btn-save'),
+            $btnUpload = $('#btn-upload'),
+            $title = $('#title'),
+            defaltTitles = ['Fizz', 'Buzz', 'Whizz'];
+
+        $thumb.on('click', 'li.preview-item', thumbClickHandler);
+        $btnSave.on('click', saveHandler);
+        $btnUpload.on('click', uploadHandler);
+
+        function thumbClickHandler(e){
+            var $this = $(this),
+                curImgSrc = $this.find('img').attr('src'),
+                index = $thumbLis.index($this);
+
+            $thumbLis.removeClass('active');
+            $this.addClass('active');
+            $preview.attr('src', curImgSrc);
+            $title.val(defaltTitles[index]);
+        }
+        function saveHandler(){
+            var $target = $thumb.find('.preview-item.active'),
+                index = $thumbLis.index($target);
+
+            $thumbLis.eq(index + 1).trigger('click');
+            $target.addClass('selected');
+        }
+        function uploadHandler(){
+            location.href = 'upload_photo_success.html';
+        }
+    })();
+</script>

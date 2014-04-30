@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="css/dji_css.css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/manage.css">
+<div style="width: 720px; padding-left: 20px;">
+	<ul class="manage-tab clearfix">
+		<li class="tab-item"><a class="fake-link" href="upload_photo.html">Upload my photos</a></li>
+		<li class="tab-item last active"><a class="fake-link" href="upload_video.html">Upload my videos</a></li>
+	</ul>
+	<ul class="manage-tab-cont">
+		<li></li>
+		<li>
+			<div class="upload-panel">
+				<div style="margin-top: 25px;"><h3>Import from followings</h3></div>
+				<div class="clearfix" style="width: 400px; margin: 40px auto 0;">
+					<a class="button sns-btn-big fb btn-import">Your<br/>Facebook<i class="icon-sns-shadow fb"></i></a>
+					<a class="button sns-btn-big gg btn-import">Your<br/>Google+<i class="icon-sns-shadow gg"></i></a>
+					<a class="button sns-btn-big tt btn-import">Your<br/>Twitter<i class="icon-sns-shadow tt"></i></a>
+					<a class="button sns-btn-big yt btn-import">Your<br/>Youtube<i class="icon-sns-shadow yt"></i></a>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="manage-mask"></div>
+<div class="manage-popup upload">
+	<img src="img/choose2upload.png">
+	<a class="cancel"></a>
+	<a href="#none" class="go"></a>
+</div>
+<div class="manage-popup import">
+	<img src="img/choose2import.png">
+	<a class="cancel close"></a>
+	<a class="cancel"></a>
+	<a href="#none" class="go"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	(function(){
+		var $mask = $('.manage-mask'),
+			$uploadPopup = $('.manage-popup.upload'),
+			$importPopup = $('.manage-popup.import'),
+			$uploadBtn = $('.btn-upload'),
+			$importBtn = $('.btn-import'),
+			$gos = $('.go'),
+			$cancels = $('.cancel');
+
+		$uploadBtn.on('click', function(){
+			$mask.show();
+			$uploadPopup.show();
+		});
+		$importBtn.on('click', function(){
+			$mask.show();
+			$importPopup.show();
+		});
+		$cancels.on('click', function(){
+			$mask.hide();
+			$('.manage-popup').hide();
+		});
+	})();
+</script>
