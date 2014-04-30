@@ -180,6 +180,7 @@ ul{
 .manage-mask{
 	display: none;
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	bottom: 0;
 	width: 100%;
@@ -190,6 +191,7 @@ ul{
 .manage-popup{
 	display: none;
 	position: absolute;
+	z-index: 2;
 	top: 50px;
 	left: 50%;
 	width: 800px;
@@ -197,15 +199,15 @@ ul{
 }
 .manage-popup > img{
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	width: 100%;
 }
 .manage-popup a{
 	display: block;
 	position: absolute;
-	z-index: 2;
+	z-index: 4;
 	cursor: pointer;
-	background: white;
+	background-color: white;
 	opacity: 0;
 	filter: alpha(opacity=0);
 }
