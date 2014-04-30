@@ -40,7 +40,7 @@
                 	<div class="preview-form-title"><p style="float:left;width:400px;">Complete information</p><label style="padding-left:24px;font-size:14px;color:#707070;cursor:pointer;"><input type="checkbox" /> For all photos</label></div>
                    	<div class="form-group">
                         <label for="title" style="display: block;">Title</label>
-                        <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;">
+                        <input type="text" class="form-control" id="title" style="display: inline-block; width: 400px;" value="Fizz">
                         <label style="margin: 0 20px;"><input type="radio" name="type"> Private</label>
                         <label><input type="radio" name="type" checked> Public</label>
                     </div>
@@ -65,7 +65,9 @@
             $thumbLis = $thumb.find('li'),
             $preview = $('.preview'),
             $btnSave = $('#btn-save'),
-            $btnUpload = $('#btn-upload');
+            $btnUpload = $('#btn-upload'),
+            $title = $('#title'),
+            defaltTitles = ['Fizz', 'Buzz', 'Whizz'];
 
         $thumb.on('click', 'li.preview-item', thumbClickHandler);
         $btnSave.on('click', saveHandler);
@@ -73,11 +75,13 @@
 
         function thumbClickHandler(e){
             var $this = $(this),
-                curImgSrc = $this.find('img').attr('src');
+                curImgSrc = $this.find('img').attr('src'),
+                index = $thumbLis.index($this);
 
             $thumbLis.removeClass('active');
             $this.addClass('active');
             $preview.attr('src', curImgSrc);
+            $title.val(defaltTitles[index]);
         }
         function saveHandler(){
             var $target = $thumb.find('.preview-item.active'),

@@ -186,6 +186,7 @@ ul{
 	background-color: #000;
 	opacity: .4;
 	filter: alpha(opacity=40);
+	z-index:999;
 }
 .manage-popup{
 	display: none;
@@ -194,12 +195,15 @@ ul{
 	left: 50%;
 	width: 800px;
 	margin-left: -400px;
+	z-index:9997;
 }
 .manage-popup > img{
 	width: 100%;
+	z-index:9998;
 }
 .manage-popup a{
 	cursor: pointer;
+	z-index:9999;
 }
 .manage-popup.upload{
 	top: 0;

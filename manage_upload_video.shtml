@@ -59,6 +59,44 @@
 
 </div>
 
+<div class="manage-mask"></div>
+<div class="manage-popup upload">
+	<img src="img/choose2upload.png">
+	<a class="cancel"></a>
+	<a href="manage_upload_video_preview.shtml" class="go"></a>
+</div>
+<div class="manage-popup import">
+	<img src="img/choose2import.png">
+	<a class="cancel close"></a>
+	<a class="cancel"></a>
+	<a href="manage_upload_video_preview.shtml" class="go"></a>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	(function(){
+		var $mask = $('.manage-mask'),
+			$uploadPopup = $('.manage-popup.upload'),
+			$importPopup = $('.manage-popup.import'),
+			$uploadBtn = $('.btn-upload'),
+			$importBtn = $('.btn-import'),
+			$gos = $('.go'),
+			$cancels = $('.cancel');
+
+		$uploadBtn.on('click', function(){
+			$mask.show();
+			$uploadPopup.show();
+		});
+		$importBtn.on('click', function(){
+			$mask.show();
+			$importPopup.show();
+		});
+		$cancels.on('click', function(){
+			$mask.hide();
+			$('.manage-popup').hide();
+		});
+	})();
+</script>
+
 <!-- #include file="inc/footer.html" -->
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
