@@ -30,7 +30,8 @@
 .upload-panel img{
 	display: inline-block;
 }
-.upload-panel .sns-btn-big{
+.upload-panel .sns-btn-big,
+.upload-panel .sns-btn-bg{
 	float: left;
 	margin: 0 15px 15px 15px;
 }
@@ -130,11 +131,32 @@
 .sns-btn-big.yt{
 	background-color: #ef4e41;
 }
+.sns-btn-big.yk{
+	background-color: #1A8FD0;
+}
+.sns-btn-big.vm{
+	background-color: #319BEC;
+}
 .sns-btn-big .icon-sns-shadow{
 	position: absolute;
 	right: 0;
 	bottom: 0;
 }
+.sns-btn-bg{
+	position: relative;
+	display: inline-block;
+	width: 172px;
+	height: 91px;
+	padding: 10px 60px 10px 10px;
+	line-height: 26px;
+	color: white;
+	font-size: bold;
+	text-align: left;
+}
+.sns-btn-bg.yk{background:url(../img/sns_youku.jpg);}
+.sns-btn-bg.yt{background:url(../img/sns_youtube.jpg);}
+.sns-btn-bg.vm{background:url(../img/sns_vimeo.jpg);}
+
 .icon-sns-shadow{
 	display: inline-block;
 	width: 55px;
@@ -153,6 +175,13 @@
 .icon-sns-shadow.yt{
 	background-position: 0 -165px;
 }
+.icon-sns-shadow.yk{
+	background-position: 0 -227px;
+}
+.icon-sns-shadow.vm{
+	background-position: 0 -281px;
+}
+
 
 .clearfix {
   zoom: 1;
@@ -180,6 +209,7 @@ ul{
 .manage-mask{
 	display: none;
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	bottom: 0;
 	width: 100%;
@@ -191,6 +221,7 @@ ul{
 .manage-popup{
 	display: none;
 	position: absolute;
+	z-index: 2;
 	top: 50px;
 	left: 50%;
 	width: 800px;
@@ -198,46 +229,49 @@ ul{
 	z-index:9997;
 }
 .manage-popup > img{
+	position: relative;
+	z-index: 3;
 	width: 100%;
 	z-index:9998;
 }
 .manage-popup a{
+	display: block;
+	position: absolute;
+	z-index: 4;
 	cursor: pointer;
+	background-color: white;
+	opacity: 0;
+	filter: alpha(opacity=0);
 	z-index:9999;
 }
 .manage-popup.upload{
 	top: 0;
 }
 .manage-popup.upload .cancel{
-	position: absolute;
 	right: 120px;
 	bottom: 14px;
 	width: 80px;
 	height: 25px;
 }
 .manage-popup.upload .go{
-	position: absolute;
 	right: 26px;
 	bottom: 14px;
 	width: 80px;
 	height: 25px;
 }
 .manage-popup.import .cancel{
-	position: absolute;
 	right: 202px;
 	top: 60px;
 	width: 84px;
 	height: 35px;
 }
 .manage-popup.import .cancel.close{
-	position: absolute;
 	right: 27px;
 	top: 0;
 	width: 28px;
 	height: 28px;
 }
 .manage-popup.import .go{
-	position: absolute;
 	right: 73px;
 	top: 60px;
 	width: 122px;
