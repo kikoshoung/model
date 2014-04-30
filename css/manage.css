@@ -177,3 +177,65 @@ ul{
 	color: inherit;
 	text-decoration: none;
 }
+.manage-mask{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	opacity: .4;
+	filter: alpha(opacity=40);
+}
+.manage-popup{
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+}
+.manage-popup > img{
+	width: 100%;
+}
+.manage-popup a{
+	cursor: pointer;
+}
+.manage-popup.upload{
+	top: 0;
+}
+.manage-popup.upload .cancel{
+	position: absolute;
+	right: 120px;
+	bottom: 14px;
+	width: 80px;
+	height: 25px;
+}
+.manage-popup.upload .go{
+	position: absolute;
+	right: 26px;
+	bottom: 14px;
+	width: 80px;
+	height: 25px;
+}
+.manage-popup.import .cancel{
+	position: absolute;
+	right: 202px;
+	top: 60px;
+	width: 84px;
+	height: 35px;
+}
+.manage-popup.import .cancel.close{
+	position: absolute;
+	right: 27px;
+	top: 0;
+	width: 28px;
+	height: 28px;
+}
+.manage-popup.import .go{
+	position: absolute;
+	right: 73px;
+	top: 60px;
+	width: 122px;
+	height: 35px;
+}
