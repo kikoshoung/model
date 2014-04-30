@@ -196,44 +196,47 @@ ul{
 	margin-left: -400px;
 }
 .manage-popup > img{
+	position: relative;
+	z-index: 1;
 	width: 100%;
 }
 .manage-popup a{
+	display: block;
+	position: absolute;
+	z-index: 2;
 	cursor: pointer;
+	background: white;
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 .manage-popup.upload{
 	top: 0;
 }
 .manage-popup.upload .cancel{
-	position: absolute;
 	right: 120px;
 	bottom: 14px;
 	width: 80px;
 	height: 25px;
 }
 .manage-popup.upload .go{
-	position: absolute;
 	right: 26px;
 	bottom: 14px;
 	width: 80px;
 	height: 25px;
 }
 .manage-popup.import .cancel{
-	position: absolute;
 	right: 202px;
 	top: 60px;
 	width: 84px;
 	height: 35px;
 }
 .manage-popup.import .cancel.close{
-	position: absolute;
 	right: 27px;
 	top: 0;
 	width: 28px;
 	height: 28px;
 }
 .manage-popup.import .go{
-	position: absolute;
 	right: 73px;
 	top: 60px;
 	width: 122px;
